@@ -1,5 +1,5 @@
 """
-hotfuzz v3 - June 2015
+hotfuzz v4 - June 2015
 MIT License
 Kamil Mansuri
 github.com/kmans/hotfuzz
@@ -9,7 +9,8 @@ Changelog:
 
 v3 - Significant code refactoring, significant speed improvements, 
 significantly optimized Python 3+ comptability, forced unicode,
-removed unicode_literals import dependance
+removed unicode_literals import dependance, added 'hotfuzz' rapid lookup,
+written for speed, returns 1 result
 v2 - Removed Levenshtein sequencematching and ext dependancies
 v1 - initial fork of fuzzywuzzy by Adam Cohen
 
@@ -393,3 +394,9 @@ def extractOne(query, choices, score_cutoff=0):
     if len(best_list) > 0 and best_list[0][1] >= score_cutoff:
         return best_list[0]
     return None
+
+
+#my attempt to do a lightning fast search for 1 result in 3 lines
+def hotfuzz(query, choices):
+    seq = {item:SequenceMatcher(None,query,item).ratio() for item in choices}
+    return max(seq, key=seq.get)
