@@ -1,9 +1,8 @@
 # hotfuzz v3
 #####hotfuzz is a 'fuzzy' search module that is lightweight and works very nicely in Python 2 and 3 projects
-#####Based on Adam Cohen's fantastic fuzzywuzzy project, hotfuzz aims to work right out of the box
-#####with Flask and other Python web frameworks.
-<br>
-#####Eventually the goal of this project is to port this over to Flask exclusively for use alongside jQuery
+#####Based on Adam Cohen's fantastic fuzzywuzzy project, hotfuzz aims to work right out of the box with Flask and other Python web frameworks.
+#####Ultimately, the goal of this project is to port this over to Flask exclusively for use alongside jQuery
+
 #####hotfuzz is best suited for smaller dictionaries and lists (queries take about 1 second for lists of 5,000 items)
 <br>
 
@@ -54,3 +53,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+[@supermansuri]:http://twitter.com/supermansuri
