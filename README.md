@@ -1,18 +1,15 @@
-#fuzzylogic
-fuzzylogic v2 - May 2015
-use of fuzzy logic to very accurately predict what a user is looking for
+#hotfuzz v3
 
-fuzzylogic is light, fast, and easy to use. 
-I will do a proper writeup of how to use it soon, but for now I recommend the following usage:
+hotfuzz v3 - June 2015
+MIT License
+Kamil Mansuri
+github.com/kmans/hotfuzz
 
-`
-fuzzylogic.extractOne('query', list_of_choices, score_cutoff=25)[0]
-`
 
-*extractOne() returns a tuple with the result and the score*
+Changelog:
 
-**query** *is the lookup string*
-
-**choices** *is a list with all the possible choices*
-
-**score_cutoff** *is a percentage match (I would recommend keeping this at 25% or higher)*
+v3 - Significant code refactoring, significant speed improvements, 
+significantly optimized Python 3+ comptability, forced unicode,
+removed unicode_literals import dependance
+v2 - Removed Levenshtein sequencematching for use of internal library despite speed decrease
+v1 - initial fork of fuzzywuzzy by Adam Cohen
