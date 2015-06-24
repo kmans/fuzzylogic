@@ -3,7 +3,7 @@
 #####Based on Adam Cohen's fantastic fuzzywuzzy project, hotfuzz aims to work right out of the box with Flask and other Python web frameworks.
 #####Ultimately, the goal of this project is to port this over to Flask exclusively for use alongside jQuery
 
-#####hotfuzz's ```extactOne()``` and ```extractBests()``` do take a bit of time to process since their results try to be as perfect as possible. If you are looking for sheer speed, try using ``hotfuzz()``, which will return exactly one result very fast (I wrote it in three lines of code and it's great for when you are working with very large data sets
+#####hotfuzz's ```extactOne()``` and ```extractBests()``` do take a bit of time to process since their results try to be as perfect as possible. If you are looking for sheer speed, try using ``hotfuzz()``, which will return exactly one result very fast (I wrote it in three lines of code and it's great for when you are working with very large data sets)
 <br>
 
 ### Installation/Usage (tested on Python 2.7.10 and Python 3.4.3)
